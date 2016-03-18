@@ -1,6 +1,15 @@
 # hello-docker
 A sample helloworld to try docker.
 
+## Build
+- Create docker images for each of the projects :
+```
+	$ cd helloworld
+	$ docker build -t helloworld:v1 .
+	$ cd ../loadbalancerhw
+	$ docker build -t hwloadbalancer:v1 .
+```
+
 ## Run
 - Start two instances with a shared volume for the visits counter :
 ```
@@ -16,3 +25,6 @@ A sample helloworld to try docker.
 	http://localhost/greetings
 	http://localhost/greetings?debug=1
 ```
+
+## Notes
+- According to your system setup you may need to be root to execute previous commands.
