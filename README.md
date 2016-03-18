@@ -5,7 +5,7 @@ A sample helloworld to try docker.
 - Start two instances with a shared volume for the visits counter :
 ```
 	$ docker run -d --volume /tmp/hello --name helloworld1 helloworld:v1
-	$ docker run -d --volume-from helloworld1 --name helloworld2 helloworld:v1
+	$ docker run -d --volumes-from helloworld1 --name helloworld2 helloworld:v1
 ```
 - Start the loadbalancer listenning on port 80 :
 ```
