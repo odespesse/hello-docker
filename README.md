@@ -11,3 +11,8 @@ A sample helloworld to try docker.
 ```
 	$ docker run -d -p 80:80 --link helloworld1:hw1 --link helloworld2:hw2 hwloadbalancer:v1
 ```
+- Now you can reach your app in normal or debug mode with :
+```
+	http://localhost/greetings
+	http://localhost/greetings?debug=1
+```
